@@ -5,7 +5,7 @@ set -e +x
 pushd movie-fun-source
   echo "Packaging JAR"
   ./mvn clean package -DskipTests
-pope
+popd
 
 jar_count=`find movie-fun-source/target -type f -name *.jar | wc -l`
 
