@@ -13,7 +13,7 @@ jobs:
   -get: movie-fun-source
    trigger: true
   -task: test
-   File: movie-fun-source/ci/tasks/test.yml
+   file: movie-fun-source/ci/tasks/test.yml
 
 - name: build
   public: true
