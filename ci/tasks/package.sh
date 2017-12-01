@@ -2,10 +2,10 @@
 
 set -e +x
 
-pushd movie-fun-source
+#pushd movie-fun-source
   echo "Packaging JAR"
-  ./mvn clean package -DskipTests
-popd
+  ./mvnw clean package -DskipTests
+#popd
 
 jar_count=`find movie-fun-source/target -type f -name *.war | wc -l`
 
