@@ -7,6 +7,14 @@ resources:
     branch: spring-boot
 
 jobs:
+- name: test
+  public: true
+  Plan:
+  -get: movie-fun-source
+   trigger: true
+  -task: test
+   File: movie-fun-source/ci/tasks/test.yml
+
 - name: build
   public: true
   plan:
