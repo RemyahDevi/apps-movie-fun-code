@@ -10,15 +10,15 @@ jobs:
 - name: test
   public: true
   Plan:
-  -get: movie-fun-source
+  -get: movie-fun
    trigger: true
   -task: test
-   file: movie-fun-source/ci/tasks/test.yml
+   file: movie-fun/ci/tasks/test.yml
 
 - name: build
   public: true
   plan:
-  - get: movie-fun-source
+  - get: movie-fun
     trigger: true
   - task: package
     file: movie-fun/ci/tasks/package.yml

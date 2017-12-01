@@ -8,7 +8,7 @@ image_resource:
     tag: "8"
 
 inputs:
-- name: movie-fun-source
+- name: movie-fun
 
 run:
-  path: movie-fun-source/ci/tasks/test.sh
+  path: movie-fun/ci/tasks/test.sh

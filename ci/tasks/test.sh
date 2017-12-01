@@ -2,7 +2,7 @@
 
 set -ex
 
-pushd movie-fun-source
+pushd movie-fun
   echo "Fetching Dependencies"
   ./mvnw clean compile > /dev/null
 
