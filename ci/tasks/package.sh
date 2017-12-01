@@ -4,6 +4,7 @@ set -e +x
 
 #pushd movie-fun-source
   echo "Packaging JAR"
+  echo `pwd`
   ./mvnw clean package -DskipTests
 #popd
 
