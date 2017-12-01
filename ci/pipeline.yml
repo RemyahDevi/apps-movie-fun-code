@@ -1,0 +1,16 @@
+---
+resources:
+- name: movie-fun
+  type: git
+  source:
+    uri: https://github.com/RemyahDevi/apps-movie-fun-code
+    branch: master
+
+jobs:
+- name: build
+  public: true
+  plan:
+  - get: movie-fun
+    trigger: true
+  - task: package
+    file: movie-fun/ci/tasks/package.yml
