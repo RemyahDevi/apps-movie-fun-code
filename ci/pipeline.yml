@@ -18,7 +18,7 @@ jobs:
 - name: build
   public: true
   plan:
-  - get: movie-fun
+  - get: movie-fun-source
     trigger: true
   - task: package
     file: movie-fun/ci/tasks/package.yml
