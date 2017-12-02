@@ -1,0 +1,10 @@
+applications:
+- name: movie-fun
+  path: target/movie-fun.war
+  random-route: true
+#  host: attendee-jl
+  memory: 768M
+  instances: 1
+  buildpack: java_buildpack
+  services:
+ # - attendee-mysql
