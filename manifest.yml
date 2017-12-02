@@ -3,7 +3,7 @@ applications:
   path: target/movie-fun.war
   random-route: true
 #  host: attendee-jl
-  memory: 768M
+  memory: 800M
   instances: 1
   buildpack: java_buildpack
   services:
